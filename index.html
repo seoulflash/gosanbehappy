@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/materialize.min.js"></script>
+	  <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto+Mono:100,300,400|Roboto:100,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Gloria+Hallelujah|Indie+Flower|Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Go! SAN - 산에 가자</title>
+
+    <style>
+      /* * {
+        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+
+        font-family: 'Indie Flower', cursive;
+        font-family: 'Abel', sans-serif;
+        font-family: 'Shadows Into Light', cursive;
+        font-family: 'Gloria Hallelujah', cursive;
+        font-family: 'Amatic SC', cursive;
+      } */
+      .scene {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: 'Shadows Into Light', cursive;
+      }
+
+      .scene.one{
+        background-image: url(img/san1.jpg);
+      }
+      .scene.two{
+        background-image: url(img/san3.jpg);
+      }
+      .scene.three{
+        background-image: url(img/san5.jpg);
+      }
+      .scene.four{
+        background-image: url(img/san6.jpg);
+      }
+
+      .scene header{
+        color:white;
+        text-shadow: 1px 1px 1px black;
+        max-width: 80%;
+        position: relative;
+        left:50%;
+        top:50%;
+        transform:translateX(-50%) translateY(-50%);
+        font-size:1.2rem;
+        text-align: center;
+      }
+      .scene header h1{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+      }
+      .scene header h1:after{
+        content:'';
+        border-bottom:1px solid white;
+        width:10rem;
+        display: block;
+        margin:0 auto;
+        margin-top:1rem;
+      }
+      #logo {
+        box-shadow: 1px 1px 1px black;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 50px;
+      }
+      .btn {
+        font-size: 1.2rem;
+      }
+      body > ul {
+        font-family: 'Nanum Gothic', sans-serif;
+      }
+    </style>
+    <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+    </script>
+  </head>
+  <body>
+      <div class="navbar-fixed">
+        <nav class="blue darken-1">
+            <div class="container">
+              <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo center">
+                  <img class="circle responsive-img" id="logo" src="img/logo.jpg" alt="logo">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger left hide-on-med-and-up"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="left hide-on-small-only">
+                  <li><a href="#">Go SAN</a></li>
+                  <li><a href="#">일정</a></li>
+                  <li><a href="#">사진</a></li>
+                </ul>
+                <ul id="nav-mobile" class="right hide-on-small-only">
+                  <li><a href="#">회원가입</a></li>
+                  <li><a href="#">로그인</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+      </div>
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#">Go SAN</a></li>
+          <li><a href="#">일정</a></li>
+          <li><a href="#">사진</a></li>
+          <li class="divider" tabindex="-1"></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">로그인</a></li>
+        </ul>
+      <section class="scene one">
+        <header>
+          <h1>Go SAN, Be HAPPY !</h1>
+          <a class="waves-effect waves-light btn red lighten-1" href="#">About Us<i class="material-icons right">info_outline</i></a>
+        </header>
+      </section>
+
+      <section class="scene two">
+        <header>
+          <h1>Go Wild, For a While</h1>
+          <a class="waves-effect waves-light btn red lighten-1">Schedule<i class="material-icons right">date_range</i></a>
+        </header>
+      </section>
+
+      <section class="scene three">
+        <header>
+          <h1 style="line-height:170%;">Look up at the stars, <br />
+          Not down your feet.</h1>
+          <a class="waves-effect waves-light btn red lighten-1">picture<i class="material-icons right">face</i></a>
+        </header>
+      </section>
+
+      <section class="scene four">
+        <header>
+          <h1>Nothing happens until something moves</h1>
+          <a class="waves-effect waves-light btn red lighten-1">Contact<i class="material-icons right">send</i></a>
+        </header>
+      </section>
+  </body>
+</html>
