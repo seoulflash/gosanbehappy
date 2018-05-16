@@ -27,7 +27,6 @@
         font-family: 'Amatic SC', cursive;
       } */
       .scene {
-        width: 100vw;
         height: 100vh;
         overflow: hidden;
         background-size: cover;
@@ -61,7 +60,7 @@
         text-align: center;
       }
       .scene header h1{
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         margin-bottom: 1rem;
         font-weight: 400;
       }
@@ -82,8 +81,30 @@
       .btn {
         font-size: 1.2rem;
       }
-      body > ul {
-        font-family: 'Nanum Gothic', sans-serif;
+      body ul {
+        font-family: 'Shadows Into Light', cursive;
+        font-weight: 500;
+      }
+      nav ul a {
+        font-size: 1.2rem;
+      }
+      #nav-mobile-1 {
+        margin-left: 5%;
+      }
+      #nav-mobile-2 {
+        margin-right: 5%;
+      }
+      /* FOOTER 영역 */
+      footer {
+        font-family: 'Shadows Into Light', cursive, 'Nanum Gothic', sans-serif;
+      }
+      #bottom-logo {
+        width: 50px;
+        box-shadow: 1px 1px 1px black;
+      }
+
+      #bottom-logo-section {
+        margin-bottom: 0;
       }
     </style>
     <script>
@@ -95,34 +116,34 @@
   <body>
       <div class="navbar-fixed">
         <nav class="blue darken-1">
-            <div class="container">
               <div class="nav-wrapper">
                 <a href="index.html" class="brand-logo center">
                   <img class="circle responsive-img" id="logo" src="img/logo.jpg" alt="logo">
                 </a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger left hide-on-med-and-up"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="left hide-on-small-only">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger left hide-on-samll-only"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile-1" class="left hide-on-med-and-down">
                   <li><a href="#">Go SAN</a></li>
-                  <li><a href="#">일정</a></li>
-                  <li><a href="#">사진</a></li>
+                  <li><a href="#">Schedule</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">Community</a></li>
                 </ul>
-                <ul id="nav-mobile" class="right hide-on-small-only">
-                  <li><a href="#">회원가입</a></li>
-                  <li><a href="#">로그인</a></li>
+                <ul id="nav-mobile-2" class="right hide-on-med-and-down">
+                  <li><a href="#">Join</a></li>
+                  <li><a href="#">Login</a></li>
                 </ul>
               </div>
-            </div>
         </nav>
       </div>
-        <ul class="sidenav" id="mobile-demo">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="#">Go SAN</a></li>
-          <li><a href="#">일정</a></li>
-          <li><a href="#">사진</a></li>
-          <li class="divider" tabindex="-1"></li>
-          <li><a href="#">회원가입</a></li>
-          <li><a href="#">로그인</a></li>
-        </ul>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#">Go SAN</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Community</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
       <section class="scene one">
         <header>
           <h1>Go SAN, Be HAPPY !</h1>
@@ -151,5 +172,26 @@
           <a class="waves-effect waves-light btn red lighten-1">Contact<i class="material-icons right">send</i></a>
         </header>
       </section>
+
+      <footer class="page-footer light-blue lighten-3">
+        <div class="container">
+          <div class="row">
+            <div class="col 12 s12">
+              <div class="center" id="bottom-logo-section">
+                <a href="index.html"><img src="img/logo.jpg" class="circle responsive-img center" id="bottom-logo" alt="bottm-logo"></a>
+              </div>
+              <h5 class="white-text center" style="line-height: 170%;">Go SAN</h5>
+              <p class="grey-text text-lighten-4 center">'산에 오르는 고생을 통하여 일상의 행복을 찾다'</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <div class="center">
+              Copyright © 2018 Go SAN All right reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
   </body>
 </html>
