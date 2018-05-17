@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/materialize.min.js"></script>
+	  <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto+Mono:100,300,400|Roboto:100,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Gloria+Hallelujah|Indie+Flower|Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Go! SAN - 산에 가자</title>
+
+    <style>
+      /* * {
+        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+
+        font-family: 'Indie Flower', cursive;
+        font-family: 'Abel', sans-serif;
+        font-family: 'Shadows Into Light', cursive;
+        font-family: 'Gloria Hallelujah', cursive;
+        font-family: 'Amatic SC', cursive;
+      } */
+
+      @@font-face {
+        font-family: 'Samsung';
+        src: url(fonts/SamsungOneKoreanTTF-400.ttf) format('truetype');
+      }
+
+      /* N A V I G A T I O N 영역 */
+      #logo {
+        box-shadow: 1px 1px 1px black;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 50px;
+      }
+      .btn {
+        font-size: 1.2rem;
+      }
+      body ul {
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
+      }
+      nav ul a {
+        font-size: 1.2rem;
+      }
+      #nav-mobile-1 {
+        margin-left: 5%;
+      }
+      #nav-mobile-2 {
+        margin-right: 5%;
+      }
+
+      /* B O D Y - S E C T I O N */
+      .loginForm {
+        margin: 150px auto;
+      }
+      .loginForm h3 {
+        font-family: 'Noto Sans', sans-serif;
+        margin-bottom: 80px;
+      }
+      .loginForm h4 {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+      }
+      .btn.login {
+        margin-top: 30px;
+      }
+
+
+      /* FOOTER 영역 */
+      footer {
+        font-family: 'Shadows Into Light', cursive, 'Nanum Gothic', sans-serif;
+      }
+      #bottom-logo {
+        width: 50px;
+        box-shadow: 1px 1px 1px black;
+      }
+
+      #bottom-logo-section {
+        margin-bottom: 0;
+      }
+      .icon {
+        margin-top: 15px;
+      }
+      #fb-icon, #ins-icon, #email-icon {
+        width: 32px;
+      }
+    </style>
+    <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+    </script>
+</head>
+<body>
+  <!-- N A V I G A T I O N -->
+    <div class="navbar-fixed">
+      <nav class="blue darken-1">
+            <div class="nav-wrapper">
+              <a href="index.html" class="brand-logo center">
+                <img class="circle responsive-img" id="logo" src="img/logo/logo.jpg" alt="logo">
+              </a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger left hide-on-samll-only"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile-1" class="left hide-on-med-and-down">
+                <li><a href="#">Go SAN</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Community</a></li>
+              </ul>
+              <ul id="nav-mobile-2" class="right hide-on-med-and-down">
+                <li><a href="#">Join</a></li>
+                <li class="active"><a href="login.html">Login</a></li>
+              </ul>
+            </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html"><i class="material-icons blue-text text-darken-1">home</i></a></li>
+      <li><a href="#">Go SAN</a></li>
+      <li><a href="#">Schedule</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Community</a></li>
+      <li class="divider" tabindex="-1"></li>
+      <li><a href="#">Join</a></li>
+      <li class="active"><a href="login.html">Login</a></li>
+    </ul>
+
+    <!-- B O D Y - S E C T I O N -->
+    <div class="container">
+      <div class="loginForm">
+        <div class="col s12">
+          <div id="login-title">
+            <!-- pc & tablet -->
+            <h3 class="center hide-on-small-only">L O G I N</h3>
+            <!-- mobile - title -->
+            <h4 class="center hide-on-med-and-up">L O G I N</h4>
+          </div>
+          <div class="row id">
+            <div class="id-section col s2"></div>
+            <div class="input-field col s8">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">아이디</label>
+            </div>
+          </div>
+          <div class="row pw">
+            <div class="id-section col s2"></div>
+            <div class="input-field col s8">
+              <i class="material-icons prefix">lock</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">비밀번호</label>
+            </div>
+          </div>
+          <div class="row enter center">
+            <button class="btn login waves-effect waves-light red lighten-1" type="submit" name="action">로그인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- F O O T E R  -->
+  <footer class="page-footer light-blue lighten-3">
+    <div class="container">
+      <div class="row">
+        <div class="col 12 s12">
+          <div class="center" id="bottom-logo-section">
+            <a href="index.html"><img src="img/logo/logo.jpg" class="circle responsive-img center" id="bottom-logo" alt="bottm-logo"></a>
+          </div>
+          <h5 class="black-text center" style="line-height: 170%;">Go SAN</h5>
+          <p class="grey-text text-darken-3 center">'산에 오르는 고생을 통하여 일상의 행복을 찾다'</p>
+          <div class="icon center">
+            <a href="https://www.facebook.com/gosanbehappy" target="_blank"><img src="img/icon/fbicon.png" id="fb-icon"></a>
+            <a href="https://www.instagram.com/gosanbehappy" target="_blank"><img src="img/icon/ins-icon.png" id="ins-icon"></a>
+            <a href="mailto:gosanbehappy@gmail.com"><img src="img/icon/email.png" id="email-icon"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="center grey-text text-darken-4 center">
+          Copyright © 2018 Go SAN All right reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

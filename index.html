@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto+Mono:100,300,400|Roboto:100,300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Gloria+Hallelujah|Indie+Flower|Shadows+Into+Light" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <title>Go! SAN - 산에 가자</title>
 
     <style>
@@ -25,7 +26,35 @@
         font-family: 'Shadows Into Light', cursive;
         font-family: 'Gloria Hallelujah', cursive;
         font-family: 'Amatic SC', cursive;
+        font-family: 'Noto Sans', sans-serif;
       } */
+
+
+      /* N A V I G A T I O N 영역 */
+      #logo {
+        box-shadow: 1px 1px 1px black;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 50px;
+      }
+      .btn {
+        font-size: 1.2rem;
+      }
+      body ul {
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
+      }
+      nav ul a {
+        font-size: 1.2rem;
+      }
+      #nav-mobile-1 {
+        margin-left: 5%;
+      }
+      #nav-mobile-2 {
+        margin-right: 5%;
+      }
+
+      /* B O D Y */
       .scene {
         height: 100vh;
         overflow: hidden;
@@ -36,16 +65,16 @@
       }
 
       .scene.one{
-        background-image: url(img/san1.jpg);
+        background-image: url(img/main/san1.jpg);
       }
       .scene.two{
-        background-image: url(img/san3.jpg);
+        background-image: url(img/main/san3.jpg);
       }
       .scene.three{
-        background-image: url(img/san5.jpg);
+        background-image: url(img/main/san5.jpg);
       }
       .scene.four{
-        background-image: url(img/san6.jpg);
+        background-image: url(img/main/san6.jpg);
       }
 
       .scene header{
@@ -72,28 +101,7 @@
         margin:0 auto;
         margin-top:1rem;
       }
-      #logo {
-        box-shadow: 1px 1px 1px black;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        width: 50px;
-      }
-      .btn {
-        font-size: 1.2rem;
-      }
-      body ul {
-        font-family: 'Shadows Into Light', cursive;
-        font-weight: 500;
-      }
-      nav ul a {
-        font-size: 1.2rem;
-      }
-      #nav-mobile-1 {
-        margin-left: 5%;
-      }
-      #nav-mobile-2 {
-        margin-right: 5%;
-      }
+
       /* FOOTER 영역 */
       footer {
         font-family: 'Shadows Into Light', cursive, 'Nanum Gothic', sans-serif;
@@ -106,6 +114,12 @@
       #bottom-logo-section {
         margin-bottom: 0;
       }
+      .icon {
+        margin-top: 15px;
+      }
+      #fb-icon, #ins-icon, #email-icon {
+        width: 32px;
+      }
     </style>
     <script>
     $(document).ready(function(){
@@ -114,11 +128,12 @@
     </script>
   </head>
   <body>
+    <!-- N A V I G A T I O N -->
       <div class="navbar-fixed">
         <nav class="blue darken-1">
               <div class="nav-wrapper">
                 <a href="index.html" class="brand-logo center">
-                  <img class="circle responsive-img" id="logo" src="img/logo.jpg" alt="logo">
+                  <img class="circle responsive-img" id="logo" src="img/logo/logo.jpg" alt="logo">
                 </a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger left hide-on-samll-only"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile-1" class="left hide-on-med-and-down">
@@ -129,21 +144,23 @@
                 </ul>
                 <ul id="nav-mobile-2" class="right hide-on-med-and-down">
                   <li><a href="#">Join</a></li>
-                  <li><a href="#">Login</a></li>
+                  <li><a href="login.html">Login</a></li>
                 </ul>
               </div>
         </nav>
       </div>
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="index.html">HOME</a></li>
+        <li class="active"><a href="index.html"><i class="material-icons blue-text text-darken-1">home</i></a></li>
         <li><a href="#">Go SAN</a></li>
         <li><a href="#">Schedule</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="#">Community</a></li>
         <li class="divider" tabindex="-1"></li>
         <li><a href="#">Join</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="login.html">Login</a></li>
       </ul>
+
+      <!-- B O D Y - S E C T I O N -->
       <section class="scene one">
         <header>
           <h1>Go SAN, Be HAPPY !</h1>
@@ -173,21 +190,27 @@
         </header>
       </section>
 
+      <!-- F O O T E R -->
       <footer class="page-footer light-blue lighten-3">
         <div class="container">
           <div class="row">
             <div class="col 12 s12">
               <div class="center" id="bottom-logo-section">
-                <a href="index.html"><img src="img/logo.jpg" class="circle responsive-img center" id="bottom-logo" alt="bottm-logo"></a>
+                <a href="index.html"><img src="img/logo/logo.jpg" class="circle responsive-img center" id="bottom-logo" alt="bottm-logo"></a>
               </div>
-              <h5 class="white-text center" style="line-height: 170%;">Go SAN</h5>
-              <p class="grey-text text-lighten-4 center">'산에 오르는 고생을 통하여 일상의 행복을 찾다'</p>
+              <h5 class="black-text center" style="line-height: 170%;">Go SAN</h5>
+              <p class="grey-text text-darken-3 center">'산에 오르는 고생을 통하여 일상의 행복을 찾다'</p>
+              <div class="icon center">
+                <a href="https://www.facebook.com/gosanbehappy" target="_blank"><img src="img/icon/fbicon.png" id="fb-icon"></a>
+                <a href="https://www.instagram.com/gosanbehappy" target="_blank"><img src="img/icon/ins-icon.png" id="ins-icon"></a>
+                <a href="mailto:gosanbehappy@gmail.com"><img src="img/icon/email.png" id="email-icon"></a>
+              </div>
             </div>
           </div>
         </div>
         <div class="footer-copyright">
           <div class="container">
-            <div class="center">
+            <div class="center grey-text text-darken-4 center">
               Copyright © 2018 Go SAN All right reserved.
             </div>
           </div>
