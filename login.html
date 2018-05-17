@@ -73,10 +73,26 @@
         margin-top: 30px;
       }
 
+     /* label focus color */
+     #icon_prefix:focus + label {
+       color: #1de9b6;
+     }
+     /* label underline focus color */
+     #icon_prefix:focus {
+       border-bottom: 1px solid #1de9b6;
+       box-shadow: 0 1px 0 0 #1de9b6;
+     }
+     /* icon prefix focus color */
+     .input-field .prefix.active {
+       color: #1de9b6;
+     }
 
       /* FOOTER 영역 */
       footer {
         font-family: 'Shadows Into Light', cursive, 'Nanum Gothic', sans-serif;
+      }
+      .footer-copyright{
+        font-family: 'Nanum Gothic', sans-serif;
       }
       #bottom-logo {
         width: 50px;
@@ -159,7 +175,7 @@
             </div>
           </div>
           <div class="row enter center">
-            <button class="btn login waves-effect waves-light red lighten-1" type="submit" name="action">로그인</button>
+            <button class="btn login waves-effect waves-light light-blue accent-3" type="submit" name="action">로그인</button>
           </div>
         </div>
       </div>
