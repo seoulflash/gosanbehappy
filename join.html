@@ -57,45 +57,7 @@
       }
 
       /* B O D Y - S E C T I O N */
-      .loginForm {
-        margin: 150px auto;
-      }
-      .loginForm h3 {
-        font-family: 'Noto Sans', sans-serif;
-        margin-bottom: 80px;
-      }
-      .loginForm h4 {
-        font-family: 'Noto Sans', sans-serif;
-        font-size: 1.5rem;
-        margin-bottom: 50px;
-      }
-      .btn.login {
-        margin-top: 30px;
-      }
 
-     /* label focus color */
-     #icon_prefix:focus + label {
-       color: #1de9b6;
-     }
-     /* label underline focus color */
-     #icon_prefix:focus {
-       border-bottom: 1px solid #1de9b6;
-       box-shadow: 0 1px 0 0 #1de9b6;
-     }
-     /* icon prefix focus color */
-     .input-field .prefix.active {
-       color: #1de9b6;
-     }
-     /* valid color */
-     #icon_prefix.valid {
-       border-bottom: 1px solid #1de9b6;
-       box-shadow: 0 1px 0 0 #1de9b6;
-     }
-     /* invalid color */
-     #icon_prefix.invalid {
-       border-bottom: 1px solid #e53935;
-       box-shadow: 0 1px 0 0 #e53935;
-     }
 
      /* FOOTER 영역 */
      footer {
@@ -120,8 +82,13 @@
      }
     </style>
     <script>
+    // SIDE NAVIGATION
     $(document).ready(function(){
       $('.sidenav').sidenav();
+    });
+    // DATE PCIKER
+    $(document).ready(function(){
+      $('.datepicker').datepicker();
     });
     </script>
 </head>
@@ -170,31 +137,46 @@
           </div>
           <!-- L O G I N - F O R M -->
           <form action="loginAction.html" method="post">
-            <div class="row id">
+            <div class="row email">
               <div class="id-section col s2"></div>
               <div class="input-field col s8">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="icon_prefix" type="text" class="validate" name="id">
-                <label for="icon_prefix">아이디</label>
+                <i class="material-icons prefix">email</i>
+                <input id="icon_prefix" type="email" class="validate" name="id">
+                <label for="icon_prefix">아이디 (이메일주소)</label>
               </div>
             </div>
             <div class="row pw">
               <div class="id-section col s2"></div>
               <div class="input-field col s8">
                 <i class="material-icons prefix">lock</i>
-                <input id="icon_prefix" type="password" class="validate" name="password">
+                <input id="icon_prefix" type="text" class="validate" name="password">
                 <label for="icon_prefix">비밀번호</label>
               </div>
             </div>
+            <div class="row nick">
+              <div class="id-section col s2"></div>
+              <div class="input-field col s8">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon_prefix" type="text" class="validate" name="nickname">
+                <label for="icon_prefix">별명</label>
+              </div>
+            </div>
+            <div class="row birth">
+              <div class="id-section col s2"></div>
+              <div class="input-field col s8">
+                <i class="material-icons prefix">date_range</i>
+                <input id="icon_prefix" type="text" class="datepicker validate" name="birth">
+                <label for="icon_prefix">생년월일</label>
+              </div>
+            </div>
             <div class="row enter center">
-              <button class="btn login waves-effect waves-light red accent-3" type="submit" name="action">로그인</button>
+              <button class="btn login waves-effect waves-light light-blue" type="submit" name="action">회원가입</button>
+              <a class="btn login waves-effect waves-light red">취 소</a>
             </div>
           </form>
         </div>
       </div>
     </div>
-
-
     <!-- F O O T E R -->
     <footer class="page-footer">
       <div class="container">
