@@ -57,6 +57,45 @@
       }
 
       /* B O D Y - S E C T I O N */
+      .loginForm {
+        margin: 50px auto;
+      }
+      .loginForm h3 {
+        font-family: 'Noto Sans', sans-serif;
+        margin-bottom: 50px;
+      }
+      .loginForm h4 {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+      }
+      .btn.login {
+        margin-top: 30px;
+      }
+
+     /* label focus color */
+     #icon_prefix:focus + label {
+       color: #1de9b6;
+     }
+     /* label underline focus color */
+     #icon_prefix:focus {
+       border-bottom: 1px solid #1de9b6;
+       box-shadow: 0 1px 0 0 #1de9b6;
+     }
+     /* icon prefix focus color */
+     .input-field .prefix.active {
+       color: #1de9b6;
+     }
+     /* valid color */
+     #icon_prefix.valid {
+       border-bottom: 1px solid #1de9b6;
+       box-shadow: 0 1px 0 0 #1de9b6;
+     }
+     /* invalid color */
+     #icon_prefix.invalid {
+       border-bottom: 1px solid #e53935;
+       box-shadow: 0 1px 0 0 #e53935;
+     }
 
 
      /* FOOTER 영역 */
@@ -131,9 +170,9 @@
         <div class="col s12">
           <div id="login-title">
             <!-- pc & tablet -->
-            <h3 class="center hide-on-small-only">L O G I N</h3>
+            <h3 class="center hide-on-small-only">J O I N</h3>
             <!-- mobile - title -->
-            <h4 class="center hide-on-med-and-up">L O G I N</h4>
+            <h4 class="center hide-on-med-and-up">J O I N</h4>
           </div>
           <!-- L O G I N - F O R M -->
           <form action="loginAction.html" method="post">
