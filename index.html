@@ -9,6 +9,9 @@
 	  <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="fontello-bcf36fd2/css/fontello.css">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto+Mono:100,300,400|Roboto:100,300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Gloria+Hallelujah|Indie+Flower|Shadows+Into+Light" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,65 +19,31 @@
     <title>Go! SAN - 산에 가자</title>
 
     <style>
-      /* * {
-        font-family: 'Nanum Gothic', sans-serif;
-        font-family: 'Roboto', sans-serif;
-        font-family: 'Roboto Mono', monospace;
-
-        font-family: 'Indie Flower', cursive;
-        font-family: 'Abel', sans-serif;
-        font-family: 'Shadows Into Light', cursive;
-        font-family: 'Gloria Hallelujah', cursive;
-        font-family: 'Amatic SC', cursive;
-        font-family: 'Noto Sans', sans-serif;
-      } */
-
-
-      /* N A V I G A T I O N 영역 */
-      #logo {
-        box-shadow: 1px 1px 1px black;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        width: 50px;
-      }
-      .btn {
-        font-size: 1.2rem;
-      }
-      body ul {
-        font-family: 'Noto Sans', sans-serif;
-        font-weight: 400;
-      }
-      nav ul a {
-        font-size: 1.2rem;
-      }
-      #nav-mobile-1 {
-        margin-left: 5%;
-      }
-      #nav-mobile-2 {
-        margin-right: 5%;
-      }
-
       /* B O D Y */
       .scene {
+        display: responsive;
         height: 100vh;
         overflow: hidden;
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
         background-attachment: fixed;
         font-family: 'Shadows Into Light', cursive;
+        justify-content: center;
       }
 
-      .scene.one{
-        background-image: url(img/main/san1.jpg);
+      .scene.one {
+        background-image: url(img/main/2.jpg);
       }
       .scene.two{
-        background-image: url(img/main/san3.jpg);
+
+        background-image: url(img/main/6.jpg);
       }
       .scene.three{
-        background-image: url(img/main/san5.jpg);
+        background-image: url(img/main/1.jpg);
       }
       .scene.four{
-        background-image: url(img/main/san6.jpg);
+        background-image: url(img/main/4.jpg);
       }
 
       .scene header{
@@ -102,27 +71,6 @@
         margin-top:1rem;
       }
 
-      /* FOOTER 영역 */
-      footer {
-        background-color: #07d275 !important;
-        font-family: 'Shadows Into Light', cursive, 'Nanum Gothic', sans-serif;
-      }
-      .footer-copyright{
-        font-family: 'Nanum Gothic', sans-serif;
-      }
-      #bottom-logo {
-        width: 50px;
-        box-shadow: 1px 1px 1px black;
-      }
-      #bottom-logo-section {
-        margin-bottom: 0;
-      }
-      .icon {
-        margin-top: 15px;
-      }
-      #fb-icon, #ins-icon, #email-icon {
-        width: 32px;
-      }
     </style>
     <script>
     $(document).ready(function(){
@@ -194,7 +142,7 @@
       </section>
 
       <!-- F O O T E R -->
-      <footer class="page-footer">
+      <footer class="page-footer" id="footer">
         <div class="container">
           <div class="row">
             <div class="col 12 s12">
@@ -203,11 +151,15 @@
               </div>
               <h5 class="white-text center" style="line-height: 170%;">Go SAN</h5>
               <p class="grey-text text-lighten-5 center">'산에 오르는 고생을 통하여 일상의 행복을 찾다'</p>
-              <div class="icon center">
-                <a href="https://www.facebook.com/gosanbehappy" target="_blank"><img src="img/icon/fbicon.png" id="fb-icon"></a>
-                <a href="https://www.instagram.com/gosanbehappy" target="_blank"><img src="img/icon/ins-icon.png" id="ins-icon"></a>
-                <a href="mailto:gosanbehappy@gmail.com"><img src="img/icon/email.png" id="email-icon"></a>
+              <div class="center" id="icon">
+                <ul class="icons">
+                  <li><a href="#" class="icon-facebook"><span class="label">Facebook</span></a></li>
+                  <li><a href="http://www.instagram.com/synapseculture" target="_blank" class="icon-instagram"><span class="label">Instagram</span></a></li>
+                  <li><a href="mailto:synapseculture@gmail.com" class="icon-mail"><span class="label">Email</span></a></li>
+                </ul>
               </div>
+
+
             </div>
           </div>
         </div>

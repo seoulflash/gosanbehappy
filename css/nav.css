@@ -1,0 +1,37 @@
+/* * {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Abel', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Noto Sans', sans-serif;
+} */
+
+
+/* N A V I G A T I O N 영역 */
+#logo {
+  box-shadow: 1px 1px 1px black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50px;
+}
+.btn {
+  font-size: 1.2rem;
+}
+body ul {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+}
+nav ul a {
+  font-size: 1.2rem;
+}
+#nav-mobile-1 {
+  margin-left: 5%;
+}
+#nav-mobile-2 {
+  margin-right: 5%;
+}

@@ -1,0 +1,47 @@
+/* FOOTER 영역 */
+footer {
+  background-color: #07d275 !important;
+  font-family: 'Shadows Into Light', cursive, 'Nanum Gothic', sans-serif;
+}
+.footer-copyright{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+#bottom-logo {
+  width: 50px;
+  box-shadow: 1px 1px 1px black;
+}
+#bottom-logo-section {
+  margin-bottom: 0;
+}
+.icon {
+  margin-top: 15px;
+}
+#footer ul.icons li{
+  display: inline-block;
+  border-radius: 100%;
+  border:1px solid rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.25);
+  width:3rem;
+  height:3rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right:1rem;
+}
+#footer ul.icons li:hover{
+  border:1px solid rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.5);
+}
+#footer ul.icons li a{
+  color:rgba(255,255,255,0.5);
+  text-decoration: none;
+}
+#footer ul.icons li a:before{
+  font-size:1.5rem;
+}
+#footer ul.icons li .label{
+  display: none;
+}
+#icon {
+  margin-top: 2rem;
+}
